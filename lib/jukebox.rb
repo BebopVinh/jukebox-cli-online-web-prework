@@ -25,7 +25,7 @@ end
 def play(songs)
   puts "Please enter a song name or number"
   u_input = gets.chomp
-  binding.pry
+  u_input = u_input.to_s
 end
 
 def exit_jukebox

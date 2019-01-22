@@ -21,14 +21,13 @@ def help
 end
 
 def list(songs)
-  songs.each.with_index {|song, index| puts "#{index+1}. #{song}"}
+  songs.each.with_index {|song, number| puts "#{number+1}. #{song}"}
 end
 
 def play(songs)
   puts "Please enter a song name or number:"
   u_input = gets.chomp
-
-  binding.pry
+  songs.each.with_index do |song, index
 end
 
 def exit_jukebox

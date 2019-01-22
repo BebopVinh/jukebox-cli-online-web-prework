@@ -25,9 +25,9 @@ def list(songs)
 end
 
 def play(songs)
-  puts "Please enter a song name or number"
+  puts "Please enter a song name or number:"
   u_input = gets.chomp
-  u_input = u_input.to_s
+
   binding.pry
 end
 

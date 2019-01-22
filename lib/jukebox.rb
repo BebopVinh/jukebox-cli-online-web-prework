@@ -19,7 +19,5 @@ def help
 end
 
 def list(songs)
-  songs.each {|i| puts i}
+  songs.each_index {|i| puts i}
 end
-  
-  

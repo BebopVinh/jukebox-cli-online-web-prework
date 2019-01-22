@@ -21,3 +21,12 @@ end
 def list(songs)
   songs.each.with_index {|song, index| puts "#{index}. #{song}"}
 end
+
+def play(songs)
+  puts "Please enter a song name or number"
+  u_input = gets.chomp
+
+end
+
+def exit_jukebox
+  puts "Goodbye"

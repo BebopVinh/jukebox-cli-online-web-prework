@@ -39,3 +39,9 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  help
+  puts "Please enter a command:"
+  u_input = gets.chomp.downcase
+  if u_input == "help"

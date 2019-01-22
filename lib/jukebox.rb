@@ -45,3 +45,14 @@ def run
   puts "Please enter a command:"
   u_input = gets.chomp.downcase
   if u_input == "help"
+    help
+  elsif u_input == "list"
+    list
+  elsif u_input == "exit"
+    exit_jukebox
+  elsif u_input == "play"
+    play(songs)
+  else
+    puts "Invalid command, please try again"
+  end
+end
